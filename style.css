@@ -1,0 +1,437 @@
+/*
+    MASTER OF STYLESHEET
+    -----------------
+    Template Name : Fitness Gym.
+    Author Name : Ahmed Shihab.
+    Author Link : https://www.fiverr.com/ahmed_shihab00?.
+    Technology : Html5, Css3, Bootstrap4, Sass/scss, Javascript, JQuery
+
+*/
+/*
+    TABLE OF CONTENT
+    -----------------
+    01. THYPOGRAPHY
+    02. NAVIGATION
+    03. BUTTON
+    04. HEADER SECTION
+    05. COURSE SECTION
+    06. BOOK APPOINTMENT SECTION
+    07. TOPNOTECH FEATURES SECTION
+    08. CALCULATE BODY SECTION 
+    09. IMAGE GALLERY SECTION
+    10. TESTIMONIAL SECTION
+    11. IMAGE SLIDER SECTION
+    12. BECOME MEMBER SECTION
+    13. ABOUT US SECTION
+    14. OVERFOLLOW HIDDEN
+
+
+*/
+/* _____________________________________
+
+   09. Preloader
+   _____________________________________ */
+.loader {
+  position: fixed;
+  z-index: 1200;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: opacity 1s linear; }
+
+.fade-out.loader {
+  opacity: 0; }
+
+.fade-out .loader-inner {
+  display: none; }
+
+.ball-scale-ripple-multiple-color > div {
+  border-color: #FE2648; }
+
+.ball-scale-ripple-multiple-bw > div {
+  border-color: #fff; }
+
+.ball-pulse-sync > div, .ball-pulse > div {
+  width: 10px;
+  height: 10px;
+  margin: 5px; }
+
+/*=====================
+      THYPOGRAPHY
+=====================*/
+h2, h3, h5 {
+  font-weight: bold; }
+
+h2, .section-paragraph, .calculate-body-section form {
+  text-align: center; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 62px;
+  font-weight: bolder; }
+
+h2 {
+  font-size: 36px; }
+
+h5 {
+  font-size: 18px; }
+
+p {
+  font-size: 16px;
+  color: #777777; }
+
+.section-padding {
+  padding: 130px 0 90px 0; }
+
+.section-paragraph {
+  padding-bottom: 50px; }
+
+.span {
+  color: #F6214B; }
+
+/*=====================
+       NAVIGATION
+=====================*/
+.stickyNav, .flex-btn span, .flex-btn:hover span, .flexpanel-active .flex-btn span {
+  background: #ffffff; }
+
+ul li {
+  padding-right: 8px; }
+
+ul li #home {
+  color: #F6214B !important; }
+
+ul li a {
+  text-transform: uppercase;
+  color: #26313c !important;
+  font-size: 16px;
+  transition: 0.3s all; }
+
+ul li a:hover {
+  color: #F6214B !important;
+  text-decoration: line-through !important;
+  transition: 0.3s all; }
+
+.stickyNav {
+  z-index: 99999 !important;
+  animation-name: animationFade;
+  animation-duration: 1s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
+.flex-btn {
+  background: #F6214B; }
+
+.flexpanel {
+  z-index: 99999 !important; }
+
+.flexpanel ul {
+  padding: 30px 0 0 20px !important; }
+
+.flexpanel ul li {
+  border-bottom: none !important; }
+
+.flexpanel ul li a {
+  color: #ffffff !important; }
+
+.flexpanel ul li a:hover {
+  color: #D71C41 !important;
+  text-decoration: line-through !important;
+  text-decoration-color: #D71C41 !important; }
+
+.flexpanel .viewport {
+  background: rgba(0, 0, 0, 0.8); }
+
+/*=====================
+        BUTTON
+=====================*/
+.btn {
+  background: #F6214B;
+  color: #ffffff;
+  padding: 12px 30px;
+  transition: 0.5s all; }
+
+.large-btn {
+  padding: 15px 30px; }
+
+.btn:hover {
+  background: #ffffff;
+  color: #F6214B;
+  transition: 0.5s all; }
+
+/*=====================
+     HEADER SECTION
+=====================*/
+.header-section .top-area {
+  padding: 10px 0; }
+
+.header-section .hero-area {
+  background-image: url("assets/image/header_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  min-height: 650px;
+  clip-path: polygon(0 1%, 100% 0, 100% 89%, 0% 100%); }
+
+.header-section .hero-area .overly {
+  position: absolute;
+  width: 100%;
+  height: 650px !important; }
+
+.header-section .hero-area .overly-bg {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.header-section .hero-area h1 {
+  padding-top: 150px; }
+
+.header-section .hero-area p {
+  color: #ffffff !important; }
+
+.header-section .header-btn {
+  margin-top: 20px; }
+
+/*=====================
+    COURSE SECTION
+=====================*/
+.course-btn {
+  padding: 9px 22px;
+  margin-top: -140px; }
+
+.card-span {
+  float: right;
+  font-weight: bold;
+  margin-top: -33px; }
+
+.slick-dots li {
+  background: rgba(127, 127, 127, 0.5);
+  height: 15px;
+  width: 15px; }
+
+.slick-dots .slick-active {
+  background: #F6214B; }
+
+.slick-dots li button::before {
+  content: " "; }
+
+/*==========================
+   BOOK APPOINTMENT SECTION
+===========================*/
+.book-appointment-section .left-side, .book-appointment-section .right-side {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 413px;
+  text-align: center;
+  color: #ffffff; }
+
+.book-appointment-section .left-side .overly, .book-appointment-section .right-side .overly {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  left: 0; }
+
+.book-appointment-section .left-side .overly-bg, .book-appointment-section .right-side .overly-bg {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.book-appointment-section h6 {
+  letter-spacing: 3px;
+  padding-top: 120px; }
+
+.book-appointment-section h3 {
+  font-size: 35px;
+  padding: 10px 0; }
+
+.book-appointment-section .left-side {
+  background-image: url("assets/image/bg-one.jpg"); }
+
+.book-appointment-section .right-side {
+  background-image: url("assets/image/bg-two.jpg"); }
+
+/*============================
+   TOPNOTECH FEATURES SECTION
+=============================*/
+.topnotch-features-section p {
+  padding: 10px 0 25px 0; }
+
+.topnotch-features-section .top-space {
+  padding-top: 35px; }
+
+/*============================
+   CALCULATE BODY SECTION
+=============================*/
+h2, .section-paragraph, .calculate-body-section form {
+  display: flex;
+  justify-content: center; }
+
+.calculate-body-section {
+  background-image: url("assets/image/calc-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+  color: #ffffff;
+  position: relative; }
+
+.calculate-body-section .overly {
+  position: absolute;
+  width: 100%;
+  min-height: 100%; }
+
+.calculate-body-section .overly-bg {
+  background-color: rgba(246, 33, 75, 0.75); }
+
+.calculate-body-section h2 {
+  font-weight: bolder;
+  padding-top: 20px; }
+
+.calculate-body-section p {
+  color: #ffffff; }
+
+.calculate-body-section form {
+  margin-top: 30px; }
+
+.calculate-body-section form label {
+  margin-top: 7px; }
+
+.calculate-body-section .second-form {
+  margin-left: -4px; }
+
+.calculate-body-section .second-form .modify-input {
+  margin-right: 165px; }
+
+.calculate-body-section form input {
+  background: transparent;
+  padding: 22px 0 22px 17px;
+  margin-left: 10px; }
+
+.calculate-body-section .button {
+  margin-left: -58px; }
+
+.calculate-body-section a {
+  padding: 11px 55px;
+  color: #000000;
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 17px; }
+
+.calculate-body-section a:hover {
+  background: #000000;
+  color: #ffffff; }
+
+/*============================
+    IMAGE GALLERY SECTION
+=============================*/
+.image-gallery-section .img-four {
+  margin-top: -147px; }
+
+.image-gallery-section .img-five {
+  margin-top: 34px; }
+
+.image-gallery-section .img-six {
+  margin-top: -56px; }
+
+/*============================
+    TESTIMONIAL SECTION
+=============================*/
+.testimonial-section .card, .testimonial-section .card img {
+  border: 0; }
+
+.testimonial-section {
+  background: #F9F9FF; }
+
+.testimonial-section .card {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.testimonial-section .card img {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px; }
+
+.testimonial-section .card:hover h5 {
+  color: #F6214B; }
+
+/*============================
+    IMAGE SLIDER SECTION
+=============================*/
+.image-slider-section {
+  padding: 110px 0; }
+
+/*============================
+    BECOME MEMBER SECTION
+=============================*/
+.become-member-section {
+  background-image: url("assets/image/bg-three.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 434px;
+  position: relative;
+  text-align: center;
+  color: #ffffff; }
+
+.become-member-section p {
+  color: #ffffff;
+  padding: 35px 0;
+  letter-spacing: 3px; }
+
+.become-member-section h2 {
+  padding-top: 90px; }
+
+.become-member-section .overly {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.become-member-section .overly-bg {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/*============================
+        ABOUT US SECTION
+=============================*/
+.about-us-section p {
+  padding-top: 20px; }
+
+.about-us-section h3 {
+  color: #F6214B; }
+
+.about-us-section input {
+  background: #F9F9FF;
+  border: none;
+  padding: 15px 0 15px 20px; }
+
+.about-us-section .btn {
+  margin-top: 20px; }
+
+.about-us-section .btn:hover {
+  background: #D71C41;
+  color: #ffffff; }
+
+.about-us-section .gotTop:hover {
+  background: #000000 !important;
+  transition: 0.7s all; }
+
+/*============================
+        OVERFLOW HIDDEN
+=============================*/
+.header-section, .course-section, .book-appointment-section, .topnotch-features-section, .calculate-body-section, .image-gallery-section, .testimonial-section, .image-slider-section, .become-member-section, .about-us-section {
+  overflow: hidden; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+
+
+@media only screen and (max-width: 1199px){
+    
+    .topnotch-features-section .topnotch .right-side{
+        margin-left: 60px !important;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+    .header-section .top-area{
+        padding: 18px 0 !important;
+    }
+    .header-section .top-area .navbar{
+        display: none;
+    }
+    .topnotch-features-section .topnotch .left-side img{
+        display: block;
+        margin: 0 auto;
+    }
+    .topnotch-features-section .topnotch .right-side{
+        margin-top: 20px;
+    }
+    .calculate-body-section form{
+        margin-left: 0 !important;
+    }
+    .calculate-body-section form input{
+        width: 100%;
+    }
+    .calculate-body-section form .second-input{
+        margin-left: 0 !important;
+    }
+    .image-gallery-section .gallery img{
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+    .become-member-section{
+        background-size: 100% 100% !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .section-padding {
+        padding: 90px 0 90px 0 !important;
+    }
+    .about-us-section{
+        text-align: center;
+    }
+    .about-us-section .btn{
+        margin-left: 20px;
+        margin-top: 0 !important;
+    }
+    .calculate-body-section h2{
+        padding-top: 0 !important;
+    }
+    .calculate-body-section form{
+        margin-top: 0 !important;
+    }
+    .calculate-body-section #form{
+        display: flex;
+        justify-content: center;
+    }
+    .calculate-body-section input{
+        margin:10px 0;
+    }
+    .calculate-body-section .button{
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    
+    .topnotch-features-section .topnotch .right-side{
+        margin-left: 60px !important;
+    }
+    .become-member-section{
+        min-height: 500px !important;
+    }
+}
